@@ -135,6 +135,15 @@ ggplot(esiown, aes(x = esi_origin, y = pop_n / 1e6, fill = esi_origin)) +
 ggsave("results/ESI_origin.png", width = 20, height = 15)
 
 # How many non-elderly workers (aged 18-64) were eligible for ESI and offered ESI from their employer but did not take it. (We call this group “decliners”)
+all_eligible = ppdata %>%
+    mutate(
+        status = ifelse(ESICOULD == 1, "Eligible", "Not Eligible"), 
+        esi_origin = ifelse(NOW_OWNGRP == 1, "Own Employer", "Not Own Employer")) %>%
+    group_by(esi_origin) %>%
+    summarise( 
+        raw_n = n(, 
+        pop_n = sum(MARSUPWT), 
+        .groups = "drop"))
 
-
+        
 # And crucially, how many “decliners” are on ESI from another family member.

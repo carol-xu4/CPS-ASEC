@@ -25,7 +25,7 @@ ppdata = pppub %>% select(
     FAMREL, A_FAMREL, A_HGA, A_PFREL,               # family / education
     WORKYN, WRK_CK, PEMLR, CLWK, PEIO1COW,          # employment
     ERN_SRCE, ERN_VAL, PTOTVAL,                     # income
-    NOW_COV, COV_MULT_CYR, PRIV, PUB,                   # any insurance
+    NOW_COV, COV_MULT_CYR, PRIV, PUB,               # any insurance
     GRP, OWNGRP, DEPGRP, OUTGRP,                    # ESI (past year)
     NOW_GRP, NOW_OWNGRP, NOW_DEPGRP,                # ESI (current)
     ESIOFFER, ESICOULD,                             # ESI offer / eligibility
