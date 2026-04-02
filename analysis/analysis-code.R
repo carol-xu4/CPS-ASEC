@@ -73,7 +73,7 @@ ggplot(esipop, aes(x = work_status, y = pop_n / 1e6, fill = esi)) +
         axis.title.y = element_text(size = 30),
         axis.text.x = element_text(size = 35), 
         axis.text.y = element_text(size = 35, angle = 0, vjust = 0.5),
-        plot.caption = element_text(size = 18),
+        plot.caption = element_text(size = 12),
         plot.background = element_rect(fill = "white"))
 ggsave("results/ESI_plot.png", width = 20, height = 15)
 
@@ -108,6 +108,6 @@ ggplot(esiown, aes(x = esi_origin, y = pop_n / 1e6, fill = esi_origin)) +
         axis.title.y = element_text(size = 30),
         axis.text.x = element_text(size = 35), 
         axis.text.y = element_text(size = 35, angle = 0, vjust = 0.5),
-        plot.caption = element_text(size = 18),
+        plot.caption = element_text(size = 12),
         plot.background = element_rect(fill = "white"))
 ggsave("results/ESI_origin.png", width = 20, height = 15)
