@@ -111,3 +111,4 @@ ggplot(esiown, aes(x = esi_origin, y = pop_n / 1e6, fill = esi_origin)) +
         plot.caption = element_text(size = 12),
         plot.background = element_rect(fill = "white"))
 ggsave("results/ESI_origin.png", width = 20, height = 15)
+

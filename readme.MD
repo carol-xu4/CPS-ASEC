@@ -5,15 +5,17 @@ https://www.census.gov/data/datasets/time-series/demo/cps/cps-asec.html
 - 110,681,349 adult workers are on ESI
 - 15,446,728 adult non-workers are on ESI
 - 39,520,250 children are on ESI
+- 165,648,327 total people (age 0-64) are on ESI
 
 <img src="results/ESI_plot.png" width="400">
 
 ### How many non-elderly workers (aged 18-64) are on ESI from their own employer.
 - 81,023,761 working adults are on ESI from their own employer
 
-<img src="results/ESI_origin.png" width="400">
-
 ### How many non-elderly workers (aged 18-64) are on ESI from another family member (family plan).
+- 77,167,868 working adults are on ESI from a family plan
+
+<img src="results/ESI_origin.png" width="400">
 
 ### How many non-elderly workers (aged 18-64) were eligible for ESI and offered ESI from their employer but did not take it. (We call this group “decliners”)
 
