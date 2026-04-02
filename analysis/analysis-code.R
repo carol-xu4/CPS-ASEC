@@ -28,7 +28,16 @@ esi_nowork_pop = ppdata %>%
     summarise(esi_nowork_pop = sum(MARSUPWT[NOW_GRP == 2]))
 
 # Population on ESI by worker status
+esipop = ppdata %>%
+    mutate( 
+        worker = ifelse(WORKYN == 1, "Worker", "Non-worker"),
+        esi = ifelse(NOW_GRP == 1, "On ESI", "Not on ESI")) %>%
+    group_by(worker, esi) %>%
+    summarise(raw_n = n(), 
+        pop_n = sum(MARSUPWT), 
+        .groups = "drop")
 
+write_csv(esipop, "results/esi_pop.csv")
 
 # Population on ESI by age
 
