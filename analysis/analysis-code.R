@@ -155,4 +155,3 @@ esi_offered = ppdata %>% filter(A_AGE >= 18 & A_AGE <= 64,
 
 esi_offered
 
-# And crucially, how many “decliners” are on ESI from another family member.
